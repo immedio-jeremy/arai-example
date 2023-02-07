@@ -19,7 +19,9 @@ func (bd BackendDeveloper) PerformBackendTask() {
 /* -------------------------------------------------------------------------- */
 
 type FullStackDeveloper struct {
-	FrontendDeveloper // mix and match embedded structs to provide a custom set of functionality
+	// mix and match embedded structs to provide a custom set of functionality which is accessible on the FullStackDeveloperType
+	// fsd.PerformFrontendTask(), NOT fsd.FrontendDeveloper.PerformFrontendTask()
+	FrontendDeveloper
 	BackendDeveloper
 }
 
