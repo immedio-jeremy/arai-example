@@ -8,7 +8,7 @@ type BackendTasker interface {
 	PerformBackendTask()
 }
 
-type FullStackTasker interface {
+type FullStackTasker interface { // independent of frontend and backend interfaces. this could live in a different package even.
 	PerformFrontendTask()
 	PerformBackendTask()
 }
