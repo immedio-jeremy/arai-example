@@ -15,6 +15,8 @@ type FullStackTasker interface { // independent of frontend and backend interfac
 
 /* -------------------------------------------------------------------------- */
 
+// notice that the consumer, not the implementation's package is where the interface is implemented.
+
 func PerformFrontendTask(ft FrontendTasker) {
 	ft.PerformFrontendTask()
 }
