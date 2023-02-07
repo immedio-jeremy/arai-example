@@ -32,7 +32,8 @@ type FrontendClone struct {
 func (fd FrontendClone) PerformFrontendTask() {
 	fd.FrontendDeveloper.PerformFrontendTask() //can invoke developer implementation similar to inheritance
 	// if you dont want to call it this implementation will hide embedded "base" implementation
-	// do something extra because you are a clone
+
+	// optionally, do something extra because you are a different type (clone)
 }
 
 /* -------------------------------------------------------------------------- */
