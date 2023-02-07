@@ -9,6 +9,8 @@ func main() {
 
 	task.PerformBackendTask(developer.BackendDeveloper{})
 
+	task.PerformFrontendTask(developer.FrontendDeveloper{})
+
 	task.PerformBackendTask(developer.FullStackDeveloper{})
 
 	task.PerformFrontendTask(developer.FullStackDeveloper{})
